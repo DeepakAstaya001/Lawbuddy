@@ -1,0 +1,34 @@
+🤖 Court Order Extraction Report
+==================================================
+
+📊 Summary:
+   🗺️ Detected State: General
+   📈 Fields Extracted: 6/9
+   🎯 Success Rate: 66.7%
+
+📋 Case Information:
+------------------------------
+   Court: High Court Of Judicature At Allahabad
+   Case Number:  2050/2022 of 2024
+   Order Date: 18-03-2024
+   Judge: Not found
+   Document Type: Writ petition (civil) judgment
+
+👥 Parties:
+------------------------------
+   Petitioner: Not found
+
+⚖️ Legal Details:
+------------------------------
+   Statutes & Sections:
+     • Not found
+   Document Type: Writ petition (civil) judgment
+   Bench: Not found
+
+📄 Case Summary:
+------------------------------
+Here is a summary in the specified format:
+
+"On 16 July 2024, Writ Petition No. filed by Mahesh Chandra Saxena and others against State of U.P. through Collector, Kheri. The petitioners claimed benefit under Section 20(b) of the Uttar Pradesh Imposition of Ceiling on Land Holdings Act, 1960. However, the court found that the entries in Khatauni of 1359 Fasli (1952 A.D.) were fabricated and unauthorized. The order of Deputy Director of Consolidation was upheld as there was no illegality in it. The petition was dismissed with costs. The court noted that the benefit of Section 20(b) would not be available to the petitioners due to the bogus entry."
+
+==================================================

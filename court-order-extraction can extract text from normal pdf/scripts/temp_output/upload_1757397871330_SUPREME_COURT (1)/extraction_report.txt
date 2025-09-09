@@ -1,0 +1,50 @@
+🤖 Court Order Extraction Report
+==================================================
+
+📊 Summary:
+   🗺️ Detected State: General
+   📈 Fields Extracted: 6/9
+   🎯 Success Rate: 66.7%
+
+📋 Case Information:
+------------------------------
+   Court: High Court Of Rajasthan And The 
+High Court Of Allahabad Have Struck Down The 
+Provisions For Reservation In Promotion In The 
+Services Of The State Of Rajasthan And The State Of 
+Uttar Pradesh
+   Case Number:  S.4562-4564 of 2024
+   Order Date: 15-11-2017
+   Judge: Not found
+   Document Type: Appeal
+
+👥 Parties:
+------------------------------
+   Petitioner: Not found
+      Age: Not found, Not found
+      Address: NOT FOUND, Not found, NOT FOUND, General, Not found
+      Counsels: Not found...
+   Respondent: State of General
+      Designation: Represented by Public Prosecutor, High Court of General
+
+⚖️ Legal Details:
+------------------------------
+   Statutes & Sections:
+     • Not found
+   Document Type: Appeal
+   Bench: Not found
+
+📄 Case Summary:
+------------------------------
+**Judgment Summary**
+
+On September 26, 2018, the Supreme Court of India passed a judgment in response to petitions related to reservation for Scheduled Castes (SC) and Scheduled Tribes (ST) in promotions. The court upheld the majority verdict in Nagaraj vs. Union of India (2006), affirming that Article 16(4-A) allows the State to determine adequate representation for SC/ST employees without requiring quantifiable data on backwardness. However, it struck down a specific condition related to quantifiable data as contrary to the nine-Judge Bench judgment in Indra Sawhney vs. Union of India (1992). The court declined to introduce proportionality to population as a test for determining adequacy of representation.
+
+**Key Points:**
+
+* Upheld Article 16(4-A) allowing States to determine adequate representation
+* Struck down requirement for quantifiable data on backwardness
+* Declined to introduce proportionality to population as a test for determination
+* Maintained that Nagaraj (2006) judgment does not require referral to a seven-Judge Bench.
+
+==================================================

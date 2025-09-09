@@ -1,0 +1,59 @@
+{
+  "court_name": "High Court Of Rajasthan And The \nHigh Court Of Allahabad Have Struck Down The \nProvisions For Reservation In Promotion In The \nServices Of The State Of Rajasthan And The State Of \nUttar Pradesh",
+  "case_number": " S.4562-4564 of 2024",
+  "alternate_case_number": "S.4562-4564",
+  "crime_number": null,
+  "order_date": "15.11.2017",
+  "judge_name": "Not found",
+  "bench": "Not found",
+  "document_type": "Appeal",
+  "statutes_sections": [
+    "Not found"
+  ],
+  "parties": [
+    {
+      "role": "petitioner",
+      "party_type": "individual",
+      "name": "Not found",
+      "official_designation": "Petitioner",
+      "address": {
+        "apartment_house": "Not found",
+        "street": "Not found",
+        "village": "Not found",
+        "post_office": "Not found",
+        "city": "Not found",
+        "district": "Not found",
+        "state": "General",
+        "zipcode": "Not found"
+      },
+      "age": "Not found",
+      "alias": "Not found",
+      "relations": "Not found",
+      "other_details": "Not found",
+      "counsels": [
+        "Not found"
+      ]
+    },
+    {
+      "role": "respondent",
+      "party_type": "government",
+      "name": "State of General",
+      "official_designation": "Represented by Public Prosecutor, High Court of General",
+      "address": {
+        "apartment_house": "Not found",
+        "street": "Not found",
+        "village": "Not found",
+        "city": "Not found",
+        "district": "Not found",
+        "state": "General",
+        "zipcode": "Not found"
+      },
+      "age": "Not found",
+      "alias": "Not found",
+      "relations": "Not found",
+      "counsels": [
+        "Not found"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "court_name": "High Court Of Judicature At Bombay\nCivil Appellate Jurisdiction\nWrit Petition No",
+  "case_number": " 1930 of 2024",
+  "alternate_case_number": "1930",
+  "crime_number": null,
+  "order_date": "01/04/1981",
+  "judge_name": "Not found",
+  "bench": "Not found",
+  "document_type": "Writ petition (civil) judgment",
+  "statutes_sections": [
+    "Not found"
+  ],
+  "parties": [
+    {
+      "role": "petitioner",
+      "party_type": "Not found",
+      "name": "Not found",
+      "official_designation": "Petitioner",
+      "address": {
+        "apartment_house": "Not found",
+        "street": "Not found",
+        "village": "Not found",
+        "post_office": "Not found",
+        "city": "Not found",
+        "district": "Not found",
+        "state": "General",
+        "zipcode": "Not found"
+      },
+      "age": "Not found",
+      "alias": "Not found",
+      "relations": "Not found",
+      "other_details": "Not found",
+      "counsels": [
+        "Not found"
+      ]
+    }
+  ]
+}

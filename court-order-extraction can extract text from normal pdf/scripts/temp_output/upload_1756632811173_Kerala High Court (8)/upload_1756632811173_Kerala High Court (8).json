@@ -1,0 +1,59 @@
+{
+  "court_name": "High Court Of Kerala At Ernakulam\nPresent\nThe Honourable Mr",
+  "case_number": "Not found",
+  "alternate_case_number": "Not found",
+  "crime_number": "Not found",
+  "order_date": "02.02.2024",
+  "judge_name": "Not found",
+  "bench": "Not found",
+  "document_type": "Anticipatory bail order (Section 438 CrPC)",
+  "statutes_sections": [
+    "Not found"
+  ],
+  "parties": [
+    {
+      "role": "petitioner",
+      "party_type": "individual",
+      "name": "Not found",
+      "official_designation": "Petitioner",
+      "address": {
+        "apartment_house": "Not found",
+        "street": "Not found",
+        "village": "Not found",
+        "post_office": "Not found",
+        "city": "Not found",
+        "district": "Not found",
+        "state": "General",
+        "zipcode": "Not found"
+      },
+      "age": "Not found",
+      "alias": "Not found",
+      "relations": "Not found",
+      "other_details": "Not found",
+      "counsels": [
+        "Not found"
+      ]
+    },
+    {
+      "role": "respondent",
+      "party_type": "government",
+      "name": "State of General",
+      "official_designation": "Represented by Public Prosecutor, High Court of General",
+      "address": {
+        "apartment_house": "Not found",
+        "street": "Not found",
+        "village": "Not found",
+        "city": "Not found",
+        "district": "Not found",
+        "state": "General",
+        "zipcode": "Not found"
+      },
+      "age": "Not found",
+      "alias": "Not found",
+      "relations": "Not found",
+      "counsels": [
+        "Not found"
+      ]
+    }
+  ]
+}

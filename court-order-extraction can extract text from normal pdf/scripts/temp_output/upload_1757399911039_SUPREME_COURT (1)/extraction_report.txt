@@ -1,0 +1,45 @@
+🤖 Court Order Extraction Report
+==================================================
+
+📊 Summary:
+   🗺️ Detected State: General
+   📈 Fields Extracted: 6/9
+   🎯 Success Rate: 66.7%
+
+📋 Case Information:
+------------------------------
+   Court: High Court Of Rajasthan And The 
+High Court Of Allahabad Have Struck Down The 
+Provisions For Reservation In Promotion In The 
+Services Of The State Of Rajasthan And The State Of 
+Uttar Pradesh
+   Case Number:  S.4562-4564 of 2024
+   Order Date: 15-11-2017
+   Judge: Not found
+   Document Type: Appeal
+
+👥 Parties:
+------------------------------
+   Petitioner: Not found
+      Age: Not found, Not found
+      Address: NOT FOUND, Not found, NOT FOUND, General, Not found
+      Counsels: Not found...
+   Respondent: State of General
+      Designation: Represented by Public Prosecutor, High Court of General
+
+⚖️ Legal Details:
+------------------------------
+   Statutes & Sections:
+     • Not found
+   Document Type: Appeal
+   Bench: Not found
+
+📄 Case Summary:
+------------------------------
+Here is the summary in the requested format:
+
+"On September 26, 2018, the Court delivered its judgment in connection with Article 16(4-A) of the Constitution. The judgment upheld the principle established by Nagaraj (supra) that reservations for Scheduled Castes and Scheduled Tribes do not require quantifiable data to determine backwardness. However, it was also held that the proportionality test to the population as a whole is not applicable in promotional posts under Article 16(4-A). The judgment distinguished between the seats reserved for Scheduled Castes and Scheduled Tribes in the House of the People under Article 330 and the promotions made by the State under Article 16(4-A)."
+
+Let me know if you would like any further assistance!
+
+==================================================

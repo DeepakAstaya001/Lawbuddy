@@ -1,0 +1,40 @@
+🤖 Court Order Extraction Report
+==================================================
+
+📊 Summary:
+   🗺️ Detected State: General
+   📈 Fields Extracted: 5/9
+   🎯 Success Rate: 55.6%
+
+📋 Case Information:
+------------------------------
+   Court: High Court Of Kerala At Ernakulam
+Present
+The Honourable Mr
+   Case Number: Not found
+   Crime Number: Not found
+   Order Date: 02-02-2024
+   Judge: Not found
+   Document Type: Anticipatory bail order (Section 438 CrPC)
+
+👥 Parties:
+------------------------------
+   Petitioner: Not found
+      Age: Not found, Not found
+      Address: NOT FOUND, Not found, NOT FOUND, General, Not found
+      Counsels: Not found...
+   Respondent: State of General
+      Designation: Represented by Public Prosecutor, High Court of General
+
+⚖️ Legal Details:
+------------------------------
+   Statutes & Sections:
+     • Not found
+   Document Type: Anticipatory bail order (Section 438 CrPC)
+   Bench: Not found
+
+📄 Case Summary:
+------------------------------
+On 2 February 2024, Bail Application No. 41 of 2024 was filed by Ibrahim, aged 36, accused in Crime No. 922/2023 of Vengara Police Station. He is charged under Section 286 IPC and Sections 4(b) & 5 of the Explosive Substances Act, 1908, for allegedly conducting illegal quarrying and blasting granite without a license, endangering life and property. The court denied anticipatory bail due to concerns about proper investigation and a pending similar offence. However, directions were issued for Ibrahim to surrender within two weeks, after which his bail request could be considered on merits.
+
+==================================================

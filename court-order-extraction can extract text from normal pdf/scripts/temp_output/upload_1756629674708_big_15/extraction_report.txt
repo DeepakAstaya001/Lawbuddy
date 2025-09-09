@@ -1,0 +1,36 @@
+🤖 Court Order Extraction Report
+==================================================
+
+📊 Summary:
+   🗺️ Detected State: General
+   📈 Fields Extracted: 6/9
+   🎯 Success Rate: 66.7%
+
+📋 Case Information:
+------------------------------
+   Court: High Court Of Judicature At Bombay
+Civil Appellate Jurisdiction
+Writ Petition No
+   Case Number:  1930 of 2024
+   Order Date: 01/04/1981
+   Judge: Not found
+   Document Type: Writ petition (civil) judgment
+
+👥 Parties:
+------------------------------
+   Petitioner: Not found
+
+⚖️ Legal Details:
+------------------------------
+   Statutes & Sections:
+     • Not found
+   Document Type: Writ petition (civil) judgment
+   Bench: Not found
+
+📄 Case Summary:
+------------------------------
+Here is a summary of the court judgment in the format you requested:
+
+"On February 2, 2024, the Hon'ble Court delivered its verdict in W.P. No.1930/2011. The case involved Maharashtra Industrial Development Corporation (MIDC) vs Union Bank of India & Anr., regarding the validity of a mortgage created by lessees. The court upheld the decision of the Debt Recovery Tribunal (DRAT), holding that the creation of the mortgage was not void ab initio as contended by MIDC. It also directed the payment of subletting charges from August 18, 2007, to October 10, 2008. The writ petition filed by MIDC was dismissed due to lack of merit."
+
+==================================================

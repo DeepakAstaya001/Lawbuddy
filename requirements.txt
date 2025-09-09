@@ -1,0 +1,14 @@
+# to start a virtual environment
+# source ./.venv/bin/activate
+paddleocr
+python -m pip install paddlepaddle-gpu==3.0.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu118/
+PyMuPDF
+pdf2image
+Pillow
+langchain
+langchain-community
+sentence-transformers
+faiss-gpu-cu12
+langchain_ollama
+conda create -n paddle_env python=3.11 -y
+conda activate paddle_env && python --version

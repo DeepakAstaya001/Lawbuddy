@@ -1,0 +1,36 @@
+🤖 Court Order Extraction Report
+==================================================
+
+📊 Summary:
+   🗺️ Detected State: General
+   📈 Fields Extracted: 6/9
+   🎯 Success Rate: 66.7%
+
+📋 Case Information:
+------------------------------
+   Court: High Court Of Judicature At Bombay
+Civil Appellate Jurisdiction
+Writ Petition No
+   Case Number:  1930 of 2024
+   Order Date: 01/04/1981
+   Judge: Not found
+   Document Type: Writ petition (civil) judgment
+
+👥 Parties:
+------------------------------
+   Petitioner: Not found
+
+⚖️ Legal Details:
+------------------------------
+   Statutes & Sections:
+     • Not found
+   Document Type: Writ petition (civil) judgment
+   Bench: Not found
+
+📄 Case Summary:
+------------------------------
+**Court Ruling: Maharashtra Industrial Development Corporation (MIDC) vs Union Bank of India**
+
+The Bombay High Court dismissed a writ petition filed by the MIDC against the Union Bank of India. The court upheld the directions issued by the Debt Recovery Tribunal (DRT), which allowed the bank to claim differential charges and incidental charges from the Karnataka Power Corporation Limited (KPCL). The court also ruled that the creation of a mortgage by KPCL in favor of the Union Bank of India was not void, as it was done in breach of a covenant in the lease agreement. The MIDC's challenge to the subletting charges was also rejected.
+
+==================================================

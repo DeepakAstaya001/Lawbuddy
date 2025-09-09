@@ -1,0 +1,43 @@
+🤖 Court Order Extraction Report
+==================================================
+
+📊 Summary:
+   🗺️ Detected State: General
+   📈 Fields Extracted: 7/9
+   🎯 Success Rate: 77.8%
+
+📋 Case Information:
+------------------------------
+   Court: High Court Of Judicature At Allahabad
+   Case Number:  465 of 2024
+   Order Date: 21-08-2024
+   Judge: A.M. Khanvilkar
+   Document Type: Writ petition (civil) judgment
+
+👥 Parties:
+------------------------------
+   Petitioner: Not found
+
+⚖️ Legal Details:
+------------------------------
+   Statutes & Sections:
+     • Not found
+   Document Type: Writ petition (civil) judgment
+   Bench: Single Judge
+
+📄 Case Summary:
+------------------------------
+**Reference No.:** 
+**Case Details:** 
+
+On [Date], the Hon'ble Court of Uttar Pradesh disposed of the Reference regarding procedures to be followed in trial courts. The court referred various judgments including Rajoo Alias Ramakant Vs. State of Madhya Pradesh, 2012 (8) SCC 553 and others.
+
+**Key Points:**
+
+*   The court upheld the appointment of amicus curiae for providing a fair trial and rendering necessary assistance to the Court.
+*   It also emphasized the importance of following established procedures in trial courts.
+
+**Order Date:** 
+22.01.2025
+
+==================================================

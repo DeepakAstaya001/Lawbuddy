@@ -60,8 +60,8 @@ A comprehensive legal document analysis platform that combines Next.js frontend 
 
 ### 1. Clone the Repository
 ```bash
-git clone <your-repository-url>
-cd complete_court_order_extraction_project
+git clone https://github.com/DeepakAstaya001/Lawbuddy.git
+cd Lawbuddy
 ```
 
 ### 2. Frontend Setup
@@ -76,7 +76,10 @@ pnpm install
 ```bash
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install PaddlePaddle (CPU build; see requirements.txt for the GPU command)
+pip install paddlepaddle
 
 # Install Python dependencies
 pip install -r requirements.txt
@@ -92,9 +95,9 @@ ollama pull llama3.1:8b
 ```
 
 ### 5. Environment Configuration
-Create a `.env.local` file in the frontend directory:
+Create a `.env.local` file in the frontend directory and point the chat API at your virtual environment's Python (defaults to `python` on PATH):
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:3000
+PYTHON_PATH=/path/to/Lawbuddy/venv/bin/python
 ```
 
 ## 🎯 Usage
@@ -121,24 +124,30 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
    - **General Mode**: Ask general legal questions
 3. Use quick action buttons or type custom questions
 
+### 5. Command-Line Processing
+Run the full pipeline on a single PDF without the web app:
+```bash
+python main.py "path/to/court_order.pdf"
+```
+Results are written to a folder named after the PDF under `output/`.
+
 ## 🏗️ Project Structure
 
 ```
-complete_court_order_extraction_project/
+Lawbuddy/
 ├── court-order-extraction can extract text from normal pdf/  # Next.js Frontend
-│   ├── app/                    # App router pages
+│   ├── app/                    # App router pages and API routes
 │   ├── components/             # React components
 │   ├── lib/                    # Utilities
-│   └── scripts/                # Python integration scripts
-├── scripts/                    # Core Python processing
-│   ├── integrated_processor.py # Main document processor
-│   ├── chat_handler_working.py # Chat API handler
-│   ├── llama.py               # LLaMA integration
-│   ├── ocr.py                 # OCR processing
-│   └── metadata_extractor.py  # Metadata extraction
+│   └── scripts/                # Python processing used by the API
+│       ├── clean_processor.py      # Document processing pipeline
+│       ├── chat_handler_working.py # Chat API handler
+│       ├── llama.py                # LLaMA integration
+│       └── ocr.py                  # OCR processing
+├── main.py                     # Command-line pipeline (OCR + metadata + summary)
 ├── metadata/                   # Metadata processing modules
-├── ocr/                       # OCR utilities
-└── utils/                     # Shared utilities
+├── ocr/                        # OCR utilities
+└── utils/                      # LLaMA helpers and output management
 ```
 
 ## 🔧 Configuration

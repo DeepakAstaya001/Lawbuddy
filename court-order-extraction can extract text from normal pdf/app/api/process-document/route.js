@@ -3,6 +3,7 @@ import { spawn } from "child_process"
 import path from "path"
 import fs from "fs"
 import { writeFile } from "fs/promises"
+import { tempUploadPath } from "@/lib/uploads"
 
 export async function POST(request) {
   try {
@@ -37,7 +38,7 @@ export async function POST(request) {
       fs.mkdirSync(tempDir, { recursive: true })
     }
 
-    const tempFilePath = path.join(tempDir, `upload_${Date.now()}_${file.name}`)
+    const tempFilePath = tempUploadPath(tempDir, file.name)
     await writeFile(tempFilePath, buffer)
 
     // Call Python processing script

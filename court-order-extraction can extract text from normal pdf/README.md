@@ -54,8 +54,10 @@ PYTHON_PATH=/path/to/.venv/bin/python
 │   ├── layout.js          # App layout
 │   ├── page.js            # Main dashboard
 │   └── api/
-│       └── extract-pdf/   # PDF processing API
+│       ├── process-document-complete/ # PDF processing API
+│       ├── chat/          # Legal chat assistant API
+│       └── qa-query/      # Document Q&A API
 ├── scripts/
-│   ├── extract_text.py    # Python text extraction
-│   └── install_requirements.py # Setup script
+│   ├── clean_processor.py # Python extraction pipeline
+│   └── chat_handler_working.py # Chat backend
 └── components/ui/         # UI components

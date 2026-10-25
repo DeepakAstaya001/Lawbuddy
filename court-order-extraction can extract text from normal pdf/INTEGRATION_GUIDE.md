@@ -6,6 +6,7 @@ This project integrates a sophisticated Python backend for legal document proces
 ## 🏗️ Architecture
 
 ### Backend (Python Scripts)
+- **`clean_processor.py`**: Entry point called by the API; runs the integrated processor and returns clean JSON
 - **`integrated_processor.py`**: Main processing pipeline that combines all functionality
 - **`ocr.py`**: Advanced OCR using PaddleOCR for scanned documents
 - **`metadata_extractor.py`**: Comprehensive metadata extraction using AI and regex patterns
@@ -14,7 +15,7 @@ This project integrates a sophisticated Python backend for legal document proces
 
 ### Frontend (Next.js)
 - **`app/page.js`**: Main UI with comprehensive document analysis display
-- **`app/api/process-document-complete/route.js`**: API endpoint that calls the integrated Python pipeline
+- **`app/api/process-document-complete/route.js`**: API endpoint that runs `clean_processor.py` and returns the analysis
 
 ## 🚀 Features
 
@@ -123,7 +124,7 @@ npm run dev
 ```
 
 ### 2. Access the Application
-Open `http://localhost:3001` in your browser
+Open `http://localhost:3000` in your browser
 
 ### 3. Upload and Process Documents
 1. Click on the "Upload & Process" tab

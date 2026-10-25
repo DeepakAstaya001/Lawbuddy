@@ -95,7 +95,7 @@
    npm run dev
    ```
 
-2. **Access**: Open `http://localhost:3001`
+2. **Access**: Open `http://localhost:3000`
 
 3. **Upload Document**: Select PDF or image file
 

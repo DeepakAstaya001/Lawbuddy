@@ -16,8 +16,8 @@ export async function POST(request) {
     // Path to the working chat handler - FIXED PATH
     const scriptPath = path.join(process.cwd(), 'scripts', 'chat_handler_working.py')
     
-    // Use the virtual environment Python
-    const pythonPath = '/home/shavak_new/Documents/Deepak_Astaya/all_working_code/complete_court_order_extraction_project/.venv/bin/python'
+    // Interpreter is configurable so the route works outside the original dev machine
+    const pythonPath = process.env.PYTHON_PATH || 'python'
 
     return new Promise((resolve) => {
       const pythonProcess = spawn(pythonPath, [scriptPath], {
@@ -26,6 +26,23 @@ export async function POST(request) {
 
       let output = ''
       let error = ''
+      let timeoutId
+      const finish = (response) => {
+        clearTimeout(timeoutId)
+        resolve(response)
+      }
+
+      pythonProcess.on('error', (err) => {
+        console.error('Failed to start Python chat process:', err)
+        finish(NextResponse.json(
+          {
+            error: 'Python not available',
+            response: 'The chat service is not configured correctly. Please check the Python installation or PYTHON_PATH.',
+            details: err.message
+          },
+          { status: 500 }
+        ))
+      })
 
       // Send input data to Python script
       const inputData = JSON.stringify({
@@ -48,7 +65,7 @@ export async function POST(request) {
       pythonProcess.on('close', (code) => {
         if (code !== 0) {
           console.error('Python chat error:', error)
-          resolve(NextResponse.json(
+          finish(NextResponse.json(
             { 
               error: 'Chat processing failed', 
               response: 'Sorry, I encountered an error while processing your request. Please try again.',
@@ -63,23 +80,21 @@ export async function POST(request) {
           // Parse the JSON response from Python
           const result = JSON.parse(output.trim())
           
-          resolve(NextResponse.json({
+          finish(NextResponse.json({
             response: result.response || 'I apologize, but I could not generate a proper response.',
             mode: result.mode || mode,
             timestamp: new Date().toISOString(),
             success: result.success || false,
             using_document: result.using_document || false,
             ai_powered: result.ai_powered || false,
-            processing_time: result.processing_time || 0,
-            success: result.success || false,
-            using_document: result.using_document || false
+            processing_time: result.processing_time || 0
           }))
         } catch (parseError) {
           console.error('Failed to parse Python output:', parseError)
           console.error('Raw output:', output)
           
           // Fallback response
-          resolve(NextResponse.json({
+          finish(NextResponse.json({
             response: output.trim() || 'Sorry, I could not process your request properly.',
             mode: mode,
             timestamp: new Date().toISOString(),
@@ -90,9 +105,9 @@ export async function POST(request) {
       })
 
       // Set a timeout to prevent hanging
-      setTimeout(() => {
+      timeoutId = setTimeout(() => {
         pythonProcess.kill('SIGTERM')
-        resolve(NextResponse.json({
+        finish(NextResponse.json({
           response: 'The request took too long to process. Please try again with a shorter question.',
           mode: mode,
           timestamp: new Date().toISOString(),

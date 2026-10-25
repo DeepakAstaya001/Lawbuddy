@@ -29,6 +29,11 @@ pip install paddleocr PyMuPDF PyPDF2 Pillow numpy
 npm run dev
 \`\`\`
 
+The chat API runs Python with `python` from your PATH. To use a virtualenv, set `PYTHON_PATH` in `.env.local`:
+\`\`\`bash
+PYTHON_PATH=/path/to/.venv/bin/python
+\`\`\`
+
 ## Usage
 
 1. Open http://localhost:3000

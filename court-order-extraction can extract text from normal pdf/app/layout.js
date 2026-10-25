@@ -5,9 +5,8 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "PDF Text Extraction System",
-  description: "Extract text from scanned PDFs using PaddleOCR",
-    generator: 'v0.dev'
+  title: "LawBuddy - Legal Document Analysis",
+  description: "Extract text, metadata and summaries from court orders, and ask questions about them",
 }
 
 export default function RootLayout({ children }) {

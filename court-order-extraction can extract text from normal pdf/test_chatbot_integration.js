@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 /**
  * Test script to verify frontend-to-LLaMA chatbot integration
+ *
+ * Usage: node test_chatbot_integration.js   (with `npm run dev` running)
+ * Set APP_URL to test a server on another host/port.
+ * Requires Node 18+ for the built-in fetch.
  */
-
-const fetch = require('node-fetch');
 
 async function testChatIntegration() {
     console.log('🚀 Testing Enhanced Chatbot Integration with LLaMA...\n');
     
-    const baseUrl = 'http://localhost:3001/api/chat';
+    const baseUrl = `${process.env.APP_URL || 'http://localhost:3000'}/api/chat`;
     
     // Test 1: General Legal Question
     console.log('📋 Test 1: General Legal Question');

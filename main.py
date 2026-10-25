@@ -7,6 +7,9 @@ from ocr.ocr import AdvancedLegalOCR
 from metadata.metadata_extractor import MetaDataExtractor
 from utils.output_manager import OutputManager
 from utils.llama import generate_court_order_summary
+
+DEFAULT_PDF_PATH = "CourtOrder/Himachal_pradesh_high_court/HIMACHAL PRADESH High Court (8).pdf"
+
 def main():
     """Enhanced main function with OCR, Metadata Extraction, and User-Confirmed Summarization"""
     
@@ -18,7 +21,22 @@ def main():
     print("📝 Phase 3: AI-Powered Document Summarization")
     print("=" * 60)
 
-    pdf_path = "CourtOrder/Himachal_pradesh_high_court/HIMACHAL PRADESH High Court (8).pdf"
+    if len(sys.argv) > 1:
+        pdf_path = sys.argv[1]
+    else:
+        pdf_path = DEFAULT_PDF_PATH
+        print(f"ℹ️ No PDF given, using default. Usage: python {os.path.basename(__file__)} <path/to/order.pdf>")
+
+    # Check if PDF exists before creating any output
+    if not os.path.exists(pdf_path):
+        print(f"❌ PDF not found: {pdf_path}")
+        pdf_dir = os.path.dirname(pdf_path) or "."
+        if os.path.isdir(pdf_dir):
+            print(f"📁 Available files in {pdf_dir}/:")
+            for file in os.listdir(pdf_dir):
+                if file.lower().endswith('.pdf'):
+                    print(f"   📄 {file}")
+        return
 
     # Initialize output manager
     output_manager = OutputManager()
@@ -26,16 +44,6 @@ def main():
     # Create output folder named after the PDF file
     filename_prefix = os.path.splitext(os.path.basename(pdf_path))[0]
     output_dir = output_manager.create_output_folder(pdf_path)
-    
-    # Check if PDF exists
-    if not os.path.exists(pdf_path):
-        print(f"❌ PDF not found: {pdf_path}")
-        print("📁 Available files in scanned_pdf/:")
-        if os.path.exists("scanned_pdf"):
-            for file in os.listdir("scanned_pdf"):
-                if file.endswith('.pdf'):
-                    print(f"   📄 {file}")
-        return
     
     try:
         start_time = time.time()
@@ -47,17 +55,18 @@ def main():
         
         ocr_system = AdvancedLegalOCR(pdf_path, output_dir)
         full_text, raw_full_text= ocr_system.process_pdf()
+
+        # Check if text extraction was successful before calling the LLM
+        if not full_text.strip():
+            print("❌ Text extraction failed - no text extracted")
+            return
+
         summary = generate_court_order_summary(full_text)
         # Save OCR results using output manager
         ocr_files = output_manager.save_ocr_results(output_dir, full_text, raw_full_text, summary)
 
         phase1_time = time.time() - start_time
         print(f"✅ Phase 1 completed in {phase1_time:.2f} seconds")
-        
-        # Check if text extraction was successful
-        if not full_text.strip():
-            print("❌ Text extraction failed - no text extracted")
-            return
     except Exception as e:
         print(f"❌ Error during OCR processing: {e}")
         traceback.print_exc()

@@ -58,7 +58,7 @@ def interactive_qa_session():
     """
     # Load the legal document
     try:
-        with open("raw_full_text.txt", 'r') as file:
+        with open("raw_full_text.txt", 'r', encoding='utf-8') as file:
             document_text = file.read()
         print("📄 Legal document loaded successfully!")
         print("=" * 60)
@@ -100,7 +100,7 @@ def interactive_qa_session():
                 # Optionally save summary to file
                 save_choice = input("\n💾 Save summary to file? (y/n): ").strip().lower()
                 if save_choice in ['y', 'yes']:
-                    with open("court_order_summary.txt", 'w') as f:
+                    with open("court_order_summary.txt", 'w', encoding='utf-8') as f:
                         f.write(summary)
                     print("✅ Summary saved to 'court_order_summary.txt'")
                     
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     if choice == "1":
         interactive_qa_session()
     elif choice == "2":
-        with open("raw_full_text.txt", 'r') as file:
+        with open("raw_full_text.txt", 'r', encoding='utf-8') as file:
             document_text = file.read()
         
         question = input("Enter your question: ")
@@ -138,7 +138,7 @@ if __name__ == "__main__":
         print(f"\nAnswer: {answer}")
     elif choice == "4":
         try:
-            with open("raw_full_text.txt", 'r') as file:
+            with open("raw_full_text.txt", 'r', encoding='utf-8') as file:
                 document_text = file.read()
             
             print("\n📝 GENERATING COURT ORDER SUMMARY...")
@@ -155,7 +155,7 @@ if __name__ == "__main__":
             # Optionally save summary to file
             save_choice = input("\n💾 Save summary to file? (y/n): ").strip().lower()
             if save_choice in ['y', 'yes']:
-                with open("court_order_summary.txt", 'w') as f:
+                with open("court_order_summary.txt", 'w', encoding='utf-8') as f:
                     f.write(summary)
                 print("✅ Summary saved to 'court_order_summary.txt'")
                 

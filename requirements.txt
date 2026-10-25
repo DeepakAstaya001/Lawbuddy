@@ -1,14 +1,25 @@
-# to start a virtual environment
-# source ./.venv/bin/activate
+# Install with: pip install -r requirements.txt
+#
+# Environment setup (run these in a shell, not through pip):
+#   conda create -n paddle_env python=3.11 -y
+#   conda activate paddle_env
+#
+# PaddlePaddle is installed separately because the GPU build comes from
+# Paddle's own package index (CUDA 11.8 shown; use `pip install paddlepaddle` for CPU):
+#   python -m pip install paddlepaddle-gpu==3.0.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu118/
+
+# OCR and PDF handling
 paddleocr
-python -m pip install paddlepaddle-gpu==3.0.0 -i https://www.paddlepaddle.org.cn/packages/stable/cu118/
 PyMuPDF
-pdf2image
 Pillow
-langchain
-langchain-community
+
+# LLaMA summaries and Q&A (requires a local Ollama server with llama3.1:8b)
+langchain-ollama
+
+# Optional: metadata extraction uses these when available and skips them otherwise
+spacy
+transformers
+torch
+nltk
 sentence-transformers
-faiss-gpu-cu12
-langchain_ollama
-conda create -n paddle_env python=3.11 -y
-conda activate paddle_env && python --version
+dateparser

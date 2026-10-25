@@ -1,15 +1,11 @@
 from paddleocr import PaddleOCR
-from pdf2image import convert_from_path
 from PIL import Image
 import fitz  # PyMuPDF
 import os
-import re
 import json
 import time
 import statistics
 import shutil
-import datetime
-from typing import Dict, List
 from ocr.text_processor import LegalTextProcessor
 from ocr.loading_ocr_models import initialize_ocr_offline
 

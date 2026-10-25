@@ -1,9 +1,8 @@
 import re
-import os
 import json
 import datetime
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict
 
 class LegalTextProcessor:
     """Process and clean extracted OCR text for legal documents"""

@@ -49,7 +49,7 @@ except ImportError:
 # Advanced NLP libraries
 try:
     import nltk
-    from nltk.tokenize import sent_tokenize, word_tokenize, ne_chunk
+    from nltk.tokenize import sent_tokenize, word_tokenize
     from nltk.tag import pos_tag
     from nltk.chunk import ne_chunk
     from nltk.tree import Tree
@@ -69,13 +69,12 @@ try:
     try:
         nltk.data.find('corpora/words')
     except LookupError:
-        # self.text_processor = LegalTextProcessor()
         nltk.download('words', quiet=True)
     AI_MODULES['nltk'] = True
 except ImportError:
     AI_MODULES['nltk'] = False
 
-# Document embeddings and similarityelf.text_processor = LegalTextProcessor()
+# Document embeddings and similarity
 try:
     from sentence_transformers import SentenceTransformer
     AI_MODULES['sentence_transformers'] = True

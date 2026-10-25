@@ -25,7 +25,7 @@ export async function POST(request) {
     }
 
     if (file.size > 100 * 1024 * 1024) {
-      return NextResponse.json({ error: "File size exceeds 100MB limit" }, { status: 100 })
+      return NextResponse.json({ error: "File size exceeds 100MB limit" }, { status: 413 })
     }
 
     // Save uploaded file temporarily
